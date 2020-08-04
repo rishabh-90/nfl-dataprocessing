@@ -19,7 +19,7 @@ pip install -r install.txt
 #Run the Solution
 python solution.py
 
-## Output of solution.py
+# Output of solution.py
 [
     {
         "event_id": "1233827",     
