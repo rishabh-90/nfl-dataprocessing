@@ -22,7 +22,7 @@ python solution.py
 # Navigate to
 http://0.0.0.0:5000/
 
-#Output
+# Output
 
 [
     {
