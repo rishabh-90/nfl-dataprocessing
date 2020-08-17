@@ -1,5 +1,22 @@
 ## Build Setup
 
+## Docker Setup
+
+``` bash
+# Clone the repo
+git clone https://github.com/rishabh-90/nfl-dataprocessing.git
+
+# navigate to project folder
+cd <project-folder>
+
+# Run Docker Compose
+docker-compose up --build
+
+# Navigate to Browser
+http://0.0.0.0:5000/
+
+```
+
 ``` bash
 # Clone the repo
 git clone https://github.com/rishabh-90/nfl-dataprocessing.git
@@ -88,18 +105,3 @@ http://0.0.0.0:5000/
 ]
 
 ```
-
-## Docker Setup
-
-``` bash
-# Clone the repo
-git clone https://github.com/rishabh-90/nfl-dataprocessing.git
-
-# navigate to project folder
-cd <project-folder>
-
-# Run Docker Compose
-docker-compose up --build
-
-# Navigate to Browser
-http://0.0.0.0:5000/
