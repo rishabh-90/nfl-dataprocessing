@@ -19,8 +19,11 @@ pip install -r install.txt
 #Run the Solution
 python solution.py
 
-# Output of solution.py
+# Navigate to
 http://0.0.0.0:5000/
+
+#Output
+
 [
     {
         "event_id": "1233827",     
@@ -83,6 +86,8 @@ http://0.0.0.0:5000/
         "home_rank": "12"
     }
 ]
+
+```
 
 ## Docker Setup
 
