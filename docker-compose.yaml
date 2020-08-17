@@ -1,0 +1,7 @@
+version: '3'
+services:
+  nfl-api:
+      image: nfl-api-proc
+      build: .
+      ports:
+      - 5000:5000

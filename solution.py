@@ -3,6 +3,10 @@ import requests
 from datetime import datetime, date, time
 from dateutil.rrule import rrule, DAILY
 import json
+import flask
+from flask import request, jsonify
+
+app = flask.Flask(__name__)
 
 '''
     This Function will Make a dataframe of teamRanking API
@@ -88,11 +92,18 @@ def teamScoreApi(team_score_df):
 
     for index, row in list(team_score_df.iterrows()):
         list_dict.append(dict(row))
-    print(json.dumps(list_dict, indent=4))
+    return list_dict
 
-team_dataframe = teamRankingDataframe('NFL')
-score_dateframe = scoreBoardDateFrame('NFL','2020-01-12', '2020-01-19')
 
-team_score_dataframe = processData(team_dataframe, score_dateframe)
+@app.route('/', methods=['GET'])
+def home():
+    team_dataframe = teamRankingDataframe('NFL')
+    score_dateframe = scoreBoardDateFrame('NFL','2020-01-12', '2020-01-19')
 
-teamScoreApi(team_score_dataframe)
+    team_score_dataframe = processData(team_dataframe, score_dateframe)
+
+    return jsonify(teamScoreApi(team_score_dataframe))
+
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')

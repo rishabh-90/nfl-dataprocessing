@@ -20,6 +20,7 @@ pip install -r install.txt
 python solution.py
 
 # Output of solution.py
+http://0.0.0.0:5000/
 [
     {
         "event_id": "1233827",     
@@ -82,3 +83,18 @@ python solution.py
         "home_rank": "12"
     }
 ]
+
+## Docker Setup
+
+``` bash
+# Clone the repo
+git clone https://github.com/rishabh-90/nfl-dataprocessing.git
+
+# navigate to project folder
+cd <project-folder>
+
+# Run Docker Compose
+docker-compose up --build
+
+# Navigate to Browser
+http://0.0.0.0:5000/
