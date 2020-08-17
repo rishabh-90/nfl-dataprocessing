@@ -1,5 +1,3 @@
-## Build Setup
-
 ## Docker Setup
 
 ``` bash
@@ -16,6 +14,8 @@ docker-compose up --build
 http://0.0.0.0:5000/
 
 ```
+
+## Local Build Setup
 
 ``` bash
 # Clone the repo
